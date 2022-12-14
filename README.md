@@ -1,6 +1,6 @@
 # Keep Notes App
 
-[Use the App](https://keep-notesjs.netlify.app/)
+[Keep notes App](https://keep-notesjs.netlify.app/)
 
 This is a 'Google Keep App' Clone made with ReactJS.
 
