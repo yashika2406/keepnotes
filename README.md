@@ -19,6 +19,3 @@ This is a 'Google Keep App' Clone made with ReactJS.
 3. Changing the tag-assigned AFTER creating notes.
 4. Option to add image
 5. May be you can suggest more😆
-
-### PS: The design is inspired from @dribbble
-Design by : Nasir Uddin
