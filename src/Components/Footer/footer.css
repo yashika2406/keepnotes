@@ -1,0 +1,23 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 55%;
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+  color: var(--dark-grey-color);
+}
+.footer__social {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .footer {
+    width: 90%;
+  }
+  .footer__social {
+    width: auto;
+  }
+}

@@ -1,0 +1,396 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--light-grey);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--medium-grey-text);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dark-grey-color);
+}
+.section {
+  background: var(--light-grey);
+  display: flex;
+  min-height: 100vh;
+}
+.side-nav {
+  flex-grow: 1;
+  position: absolute;
+  min-width: 250px;
+  min-height: 100%;
+  margin-top: 3rem;
+  background: white;
+  border-top-right-radius: 10px;
+  box-shadow: 5px -5px 10px #e3e3e3, -5px 5px 10px #ffffff;
+}
+.main-area {
+  flex-grow: 6;
+  margin-top: 3rem;
+}
+.side-nav__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0rem;
+  padding: 1rem;
+  margin-right: 1rem;
+}
+
+.title > .svg {
+  flex-grow: 1;
+  margin-right: 0.5rem;
+}
+.title:hover {
+  background: var(--light-orange-color);
+  border-radius: 0 40px 40px 0;
+}
+
+.title:hover > .title-heading {
+  color: black;
+}
+
+.title > .title-heading {
+  flex-grow: 2;
+  justify-self: flex-end;
+  color: var(--dark-grey-color);
+}
+
+/* Main Area Add Note Section */
+
+.add-note-section {
+  background: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+.add-note-input-section {
+  background: var(--light-grey);
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+.add-note-input-section .input {
+  background: transparent;
+  border: none;
+  width: 100%;
+  background: var(--light-grey);
+  padding: 1rem;
+}
+.add-note-input-section .input:focus {
+  outline: none;
+}
+.add-note-input-section .title-input {
+  border-bottom: 1px solid var(--dark-grey-color);
+  color: var(--dark-grey-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-note-input-section .title-input::placeholder {
+  color: var(--dark-grey-color);
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-note-input-section .note-text-input {
+  height: 80px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  background: var(--light-grey);
+  padding: 1rem;
+}
+.add-note-input-section .note-text-input:focus {
+  outline: none;
+}
+
+/*  Add Note Color Circles */
+.note-properties {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.add-note-properties-section {
+  display: flex;
+  margin: 0.5rem 0;
+}
+.add-note-properties-section .color-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+.add-note-properties-section .color-circle:hover {
+  border: 2px solid var(--dark-grey-color);
+}
+.circle-one {
+  background: var(--circle-color-one);
+}
+.circle-two {
+  background: var(--circle-color-two);
+}
+.circle-three {
+  background: var(--circle-color-three);
+}
+.circle-four {
+  background: var(--circle-color-four);
+}
+.properties-pin-add {
+  display: flex;
+  align-items: center;
+}
+.pin-icon {
+  margin-left: 1rem;
+  cursor: pointer;
+}
+.add-button {
+  background: var(--light-grey);
+  padding: 0.5rem 1.5rem;
+  border: none;
+  color: var(--dark-grey-color);
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+.add-button:focus {
+  outline: none;
+}
+
+/* Tags Section */
+
+.tags-div {
+  width: 50%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 180px 180px 180px 180px;
+  grid-template-rows: 60px 60px;
+  grid-auto-flow: row;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+}
+.tag {
+  display: flex;
+  background: white;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+}
+.tag > p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.randomTag {
+  margin-right: 0.5rem;
+  filter: invert(56%) sepia(63%) saturate(1400%) hue-rotate(313deg)
+    brightness(93%) contrast(92%);
+}
+.work {
+  margin-right: 0.5rem;
+  filter: invert(75%) sepia(12%) saturate(1001%) hue-rotate(157deg)
+    brightness(94%) contrast(87%);
+}
+
+.inspiration {
+  margin-right: 0.5rem;
+  filter: invert(96%) sepia(11%) saturate(1234%) hue-rotate(298deg)
+    brightness(99%) contrast(89%);
+}
+.todo {
+  margin-right: 0.5rem;
+  filter: invert(94%) sepia(5%) saturate(783%) hue-rotate(109deg)
+    brightness(103%) contrast(95%);
+}
+.personal {
+  margin-right: 0.5rem;
+  filter: invert(57%) sepia(47%) saturate(2496%) hue-rotate(327deg)
+    brightness(129%) contrast(109%);
+}
+.random-one {
+  filter: invert(79%) sepia(37%) saturate(280%) hue-rotate(87deg)
+    brightness(96%) contrast(97%);
+}
+.random-two {
+  filter: invert(79%) sepia(14%) saturate(482%) hue-rotate(210deg)
+    brightness(94%) contrast(88%);
+}
+.random-three {
+  filter: invert(90%) sepia(4%) saturate(2884%) hue-rotate(359deg)
+    brightness(78%) contrast(85%);
+}
+.random-four {
+  filter: invert(88%) sepia(13%) saturate(379%) hue-rotate(38deg)
+    brightness(111%) contrast(77%);
+}
+.random-five {
+  filter: invert(89%) sepia(2%) saturate(4625%) hue-rotate(340deg)
+    brightness(103%) contrast(89%);
+}
+.new-tag-input {
+  border: none;
+  background: transparent;
+  font-size: 15px;
+  width: 70px;
+}
+.new-tag-input:focus {
+  outline: none;
+}
+.new-tag-input::placeholder {
+  font-size: 16px;
+}
+/* Tags Done --> Notes Section started */
+
+.display-notes {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.display-trash-notes {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.note {
+  width: 250px;
+  height: 350px;
+  background: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 3px solid var(--circle-color-one);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  overflow-y: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.note > h1 {
+  color: var(--dark-grey-color);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.note > textarea {
+  margin: 1rem 0;
+  color: var(--dark-grey-color);
+  font-size: 16px;
+  flex: 4;
+  background: transparent;
+  border: none;
+  width: 100%;
+  padding: 0.5rem;
+}
+.note > textarea:focus {
+  outline: none;
+  background: var(--light-grey);
+  border-radius: 4px;
+}
+.note > p {
+  margin: 1rem 0;
+  color: var(--dark-grey-color);
+  font-size: 16px;
+  flex: 4;
+  background: transparent;
+  border: none;
+  width: 100%;
+}
+/* 
+.colors-in-note {
+  /* display: none; */
+/* margin: 0.5rem; */
+/* margin-left: -2.5rem; */
+/* } */
+
+/* .palette:hover ~ .colors-in-note {
+  display: flex;
+  margin-top: 6rem; 
+  background: black;
+  padding: 0.5rem;
+  border-radius: 4px;
+} */
+.note-type-heading {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (max-width: 600px) {
+  .header_nav {
+    display: none;
+  }
+  .section {
+    display: block;
+    margin-top: -2rem;
+  }
+  .side-nav {
+    margin-top: 1rem;
+    position: static;
+    min-width: 100%;
+    min-height: 40px;
+    border-top-right-radius: 0;
+    box-shadow: none;
+    border-bottom: 1px solid var(--dark-grey-color);
+  }
+  .main-area {
+    width: 100%;
+  }
+  .side-nav__titles {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+  }
+  .title:hover {
+    background: var(--light-orange-color);
+    border-radius: 40px 40px 40px 40px;
+  }
+  .add-note-section {
+    width: 95%;
+  }
+  .tags-div {
+    width: 95%;
+    margin: auto;
+    grid-template-columns: 175px 175px;
+  }
+  .display-notes {
+    width: 90%;
+  }
+  .display-trash-notes {
+    width: 90%;
+    margin: auto;
+  }
+  .note {
+    width: 300px;
+  }
+  .title {
+    margin: 0.5rem;
+    padding: 0.5rem;
+  }
+}
